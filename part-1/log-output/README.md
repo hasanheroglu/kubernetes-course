@@ -6,3 +6,8 @@
 2. Run `docker push {your_docker_hub_username}/log-output` to push your docker image to the docker hub.
 3. Assuming your k3d cluster is already running, run `kubectl create deployment log-output --image={your_docker_hub_username}/log-output`.
 4. Run `kubectl logs deployments/log-output` after the container is created and started successfully. 
+
+## Updates 
+
+For Exercise 1.03, a [deployment file](manifests/deployment.yaml) has been added.
+The deployment file can be applied by running the command `kubectl apply -f manifests/deployment.yaml`.
