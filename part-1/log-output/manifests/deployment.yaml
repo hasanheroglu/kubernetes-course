@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hasahgenerator-dep
+  name: logoutput-dep
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: hashgenerator
+      app: logoutput
   template:
     metadata:
       labels:
-        app: hashgenerator
+        app: logoutput
     spec:
       containers:
-      - name: hashgenerator
-        image: jakousa/dwk-app1:b7fc18de2376da80ff0cfc72cf581a9f94d10e64
+      - name: logoutput
+        image: hasanheroglu/log-output:latest
         resources:
           limits:
             memory: "128Mi"
