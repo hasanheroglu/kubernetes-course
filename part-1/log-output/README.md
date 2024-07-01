@@ -9,5 +9,11 @@
 
 ## Updates 
 
-For Exercise 1.03, a [deployment file](manifests/deployment.yaml) has been added.
-The deployment file can be applied by running the command `kubectl apply -f manifests/deployment.yaml`.
+### Exercise 1.03
+- For Exercise 1.03, a [deployment file](manifests/deployment.yaml) has been added.
+  The deployment file can be applied by running the command `kubectl apply -f manifests/deployment.yaml`.
+
+### Exercise 1.07
+- For exercise 1.07, express and dotenv are added to the project dependencies.
+  [ingress.yaml](./manifests/ingress.yaml) and [service.yaml](./manifests/service.yaml) are added for accessing the app.
+  Running `kubectl apply -f log-output/manifests/` would run the app in the k8s cluster and set up the network. 
