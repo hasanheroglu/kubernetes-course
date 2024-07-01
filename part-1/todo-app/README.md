@@ -21,3 +21,7 @@ Running the command `kubectl port-forward <pod_name> 3003:3333` would forward th
 ### Exercise 1.06
 For exercise 1.06, the app version is updated to 0.4.0, and [service.yaml](./manifests/service.yaml) has been added.
 k3d cluster maps agent 0's port `:30081` to localhost:8083 and NodePort maps container's `:3333` to node's `:30081`.
+
+### Exercise 1.08
+For exercise 1.08, the app version is updated to 0.5.0, and [ingress.yaml](./manifests/ingress.yaml) has been added.
+[service.yaml](./manifests/service.yaml) is no longer a NodePort service but a ClusterIP.
