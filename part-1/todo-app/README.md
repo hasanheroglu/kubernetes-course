@@ -9,6 +9,9 @@
    
 ## Updates
 
-For exercise 1.04, the app version is updated to 0.2.0, and the docker image is created accordingly.
-A [deployment file](manifests/deployment.yaml) has been added.
-The deployment file can be applied by running the command `kubectl apply -f manifests/deployment.yaml`.
+- For exercise 1.04, the app version is updated to 0.2.0, and the docker image is created accordingly.
+    A [deployment file](manifests/deployment.yaml) has been added.
+    The deployment file can be applied by running the command `kubectl apply -f manifests/deployment.yaml`.
+
+- For exercise 1.05, the app version is updated to 0.3.0, and the app now returns a html page on GET request to the route `/`. 
+    Running the command `kubectl port-forward <pod_name> 3003:3333` would forward the pod's port 3333 to `localhost:3003`.
