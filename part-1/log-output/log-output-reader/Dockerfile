@@ -1,5 +1,5 @@
 FROM node:20-alpine
-WORKDIR /logOutput
+WORKDIR /usr/src/app
 
 COPY . .
 

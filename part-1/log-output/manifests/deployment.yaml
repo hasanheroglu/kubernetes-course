@@ -12,9 +12,12 @@ spec:
       labels:
         app: logoutput
     spec:
+      volumes: 
+        - name: shared-output
+          emptyDir: {}
       containers:
-      - name: logoutput
-        image: hasanheroglu/log-output:latest
+      - name: logoutputwriter
+        image: hasanheroglu/log-output-writer:latest
         resources:
           limits:
             memory: "128Mi"
@@ -22,3 +25,15 @@ spec:
         env: 
           - name: PORT
             value: "4000"
+        volumeMounts:
+          - name: shared-output
+            mountPath: /usr/src/app/files
+      - name: logoutputreader
+        image: hasanheroglu/log-output-reader:latest
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        volumeMounts:
+          - name: shared-output
+            mountPath: /usr/src/app/files

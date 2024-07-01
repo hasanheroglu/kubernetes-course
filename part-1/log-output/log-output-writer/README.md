@@ -1,4 +1,4 @@
-# Exercise 1.01
+# Log Output Writer
 
 ## Steps
 
@@ -20,3 +20,6 @@ Running `kubectl apply -f log-output/manifests/` would run the app in the k8s cl
 
 ### Exercise 1.09
 For exercise 1.09, [ingress.yaml](./manifests/ingress.yaml) has been adjusted, and [strip-prefix-mw.yaml](./manifests/strip-prefix-mw.yaml) has been added.
+
+### Exercise 1.10
+For exercise 1.10, the app is split into two applications, and this one is converted to log-output-writer.

@@ -1,5 +1,5 @@
 {
-  "name": "logoutput",
+  "name": "log-output-writer",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
